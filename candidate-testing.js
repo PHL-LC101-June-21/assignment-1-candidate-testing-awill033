@@ -32,7 +32,7 @@ function gradeQuiz(candidateAnswers) {
   let g = 0
   for(i = 0; i < candidateAnswers.length; i++) {
   candidateCorrectAnswers = [];   
-    if (candidateAnswers[i] == correctAnswers[i]) {
+    if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
       g += 1;
     }  
   }
